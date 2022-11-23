@@ -1,5 +1,5 @@
 graph:
-	swift package show-dependencies --package-path Modules/Root --format dot \
+	swift package show-dependencies --package-path ios/Modules/Root --format dot \
 		| grep -v pointfree \
 		| grep -v apple \
 		| sed -Ee 's/\/Users\/fhdelrio\/Documents\/Develop\/CustomFeaturesApp\/Modules\///g' \
